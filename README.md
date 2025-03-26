@@ -90,6 +90,22 @@ This lab serves as a foundation for further data analysis exercises, reinforcing
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 2 - Data Wrangling
 
+### Key Highlights:
+
+#### Handling Missing Data:
+Identified missing values in Screen_Size_cm and Weight_kg columns.
+Replaced missing Weight_kg values with the column's mean.
+
+#### Data Cleaning & Standardization:
+Rounded Screen_Size_cm values to two decimal places.
+Converted categorical data into numerical indicator variables.
+
+#### Data Visualization:
+Used binning to group numerical data and plotted grouped bar graphs.
+
+#### Libraries Used:
+pandas, numpy, matplotlib, and skillsnetwork for dataset retrieval.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 3 - Exploratory Data Analysis
 

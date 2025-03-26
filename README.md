@@ -69,7 +69,7 @@ The price of the laptop is in USD.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 1 - Importing Data Sets
 
-## Key Highlights
+### Key Highlights
 Data Handling: Loaded a dataset containing 238 laptop entries with 12 columns covering manufacturer, specifications, and pricing.
 
 Exploratory Data Analysis (EDA): Used df.info() to inspect column data types, non-null counts, and memory usage.

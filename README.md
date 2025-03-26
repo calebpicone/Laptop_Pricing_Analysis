@@ -70,18 +70,19 @@ The price of the laptop is in USD.
 ## Notebook 1 - Importing Data Sets
 
 ### Key Highlights
-Data Handling: Loaded a dataset containing 238 laptop entries with 12 columns covering manufacturer, specifications, and pricing.
 
-Exploratory Data Analysis (EDA): Used df.info() to inspect column data types, non-null counts, and memory usage.
+#### Data Handling:
+Loaded a dataset containing 238 laptop entries with 12 columns covering manufacturer, specifications, and pricing.
 
-Identifying Data Issues: Detected missing values in Screen_Size_inch and Weight_kg columns.
+#### Exploratory Data Analysis (EDA): 
+Used df.info() to inspect column data types, non-null counts, and memory usage.
 
-Python & Pandas Techniques:
+#### Identifying Data Issues: 
+Detected missing values in Screen_Size_inch and Weight_kg columns.
 
+#### Python & Pandas Techniques:
 Imported datasets using pandas.read_csv().
-
 Used df.info() for dataset structure analysis.
-
 Recognized numerical (int64, float64) and categorical (object) data types.
 
 This lab serves as a foundation for further data analysis exercises, reinforcing skills in data exploration, cleaning, and preprocessing.

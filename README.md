@@ -65,6 +65,7 @@ The weight of the laptop is in kgs.
 
 #### Price
 The price of the laptop is in USD.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 1 - Importing Data Sets
 

@@ -109,6 +109,43 @@ pandas, numpy, matplotlib, and skillsnetwork for dataset retrieval.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 3 - Exploratory Data Analysis
 
+### Key Skills Covered:
+
+- Visualizing feature patterns
+
+- Running descriptive statistical analysis
+
+- Using groups and pivot tables to analyze categorical variables
+
+- Measuring correlation using Pearson’s method
+
+### Libraries Used:
+
+pandas, numpy, seaborn, matplotlib, scipy
+
+### Key Tasks & Insights:
+#### 1. Visualizing Feature Patterns
+Regression Plots for continuous variables (CPU_frequency, Screen_Size_inch, Weight_pounds) vs. Price
+
+##### Findings:
+
+- CPU_frequency has a moderate positive correlation (0.37)
+
+- Screen_Size_inch and Weight_pounds show weak correlations with price
+
+- Box Plots for categorical variables (Category, GPU, OS, CPU_core, RAM_GB, Storage_GB_SSD)
+
+- Differences in median price observed across these categories
+
+#### 2. Descriptive Statistical Analysis
+- Summary statistics for numerical and categorical features
+- Identified distribution trends and variations in laptop pricing
+
+#### 3. Measuring Correlations
+- Used Pearson correlation matrix
+- CPU_frequency had the highest positive correlation with price
+- Other features had minimal impact
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 4 - Model Development
 

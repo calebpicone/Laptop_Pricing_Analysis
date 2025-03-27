@@ -199,5 +199,68 @@ Regression Plots for continuous variables (CPU_frequency, Screen_Size_inch, Weig
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 4 - Model Development
 
+### Key Skills Covered:
+- Implementing Linear Regression with one and multiple variables
+- Applying Polynomial Regression to fit data
+- Building regression models with pipelines
+- Evaluating regression models using Mean Squared Error (MSE) and R-squared (R²)
+- Using various regression techniques for predicting outcomes
+
+### Libraries Used:
+- pandas: for data manipulation and analysis
+- numpy: for mathematical operations
+- matplotlib: for visualizations and plotting
+- seaborn: for enhanced visualizations
+- sklearn: for machine learning and model evaluation (LinearRegression, PolynomialFeatures, StandardScaler, etc.)
+
+### Key Tasks & Insights:
+#### 1. Single Linear Regression
+
+##### Steps:
+1. Load the dataset and inspect it.
+2. Train the Linear Regression model on the "CPU_frequency" feature.
+3. Visualize the actual vs. predicted price using distribution plots.
+4. Calculate and interpret the Mean Squared Error (MSE) and R-squared score.
+
+##### Outcome:
+- MSE and R² values are calculated to evaluate model performance.
+- The results give insight into the relationship between CPU frequency and price.
+
+#### 2. Multiple Linear Regression
+
+##### Steps:
+1. Train a Multiple Linear Regression model using these features.
+2. Visualize the predicted values against the actual values.
+3. Evaluate the model using MSE and R².
+
+##### Outcome:
+- The performance comparison between Single and Multiple Linear Regression is analyzed, highlighting improvements with more features.
+
+#### 3. Polynomial Regression
+
+##### Steps:
+1. Fit polynomial regression models with degrees 1, 3, and 5.
+2. Visualize the regression fits on the data using plots.
+3. Calculate MSE and R² for each polynomial model.
+
+##### Outcome:
+- Insights gained on how polynomial degree impacts the model's ability to fit the data.
+- Comparison of polynomial fits with linear models to understand the benefits of higher-degree polynomials in this scenario.
+
+#### 4. Pipeline for Polynomial Regression
+
+##### Steps:
+1. Set up a pipeline using PolynomialFeatures, StandardScaler, and LinearRegression.
+2. Split the data into training and testing sets.
+3. Fit the pipeline on the training data.
+4. Use the pipeline to predict the test data and visualize the actual vs. predicted values in a scatter plot.
+5. Evaluate the model performance by calculating MSE and R² values.
+6. Compare the performance of the pipeline model to previous models (e.g., linear regression and polynomial regression without a pipeline).
+
+##### Outcome:
+- The pipeline streamlines the model-building process, reducing the risk of errors in transformation and modeling.
+- Insights on the impact of polynomial features and scaling on model performance.
+- A comparison of pipeline model performance against other models in terms of accuracy and fit.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 5 - Model Evaluation and Refinement

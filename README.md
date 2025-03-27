@@ -90,21 +90,36 @@ This lab serves as a foundation for further data analysis exercises, reinforcing
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 2 - Data Wrangling
 
-### Key Highlights:
+### Key Skills Covered:
+- Handling missing data in different ways
+- Correcting incorrect data types
+- Standardizing and normalizing dataset attributes
+- Visualizing data using binning
+- Converting categorical data into numerical indicators
 
-#### Handling Missing Data:
-Identified missing values in Screen_Size_cm and Weight_kg columns.
-Replaced missing Weight_kg values with the column's mean.
+### Setup & Libraries Used:
+- pandas (data manipulation)
+- numpy (mathematical operations)
+- matplotlib (data visualization)
+- skillsnetwork (dataset download)
 
-#### Data Cleaning & Standardization:
-Rounded Screen_Size_cm values to two decimal places.
-Converted categorical data into numerical indicator variables.
+### Key Tasks & Insights:
+#### 1. Importing Required Libraries:
+- numpy, pandas, and matplotlib are loaded for data processing.
 
-#### Data Visualization:
-Used binning to group numerical data and plotted grouped bar graphs.
+#### 2. Loading the Dataset:
+- The dataset is downloaded and loaded into a Pandas DataFrame using pd.read_csv().
+- The dataset contains 238 rows and 13 columns, including attributes like Manufacturer, Category, Screen_Size_cm, Weight_kg, and Price.
 
-#### Libraries Used:
-pandas, numpy, matplotlib, and skillsnetwork for dataset retrieval.
+#### 3. Handling Missing Data:
+- Identified missing values in Screen_Size_cm (4 missing values) and Weight_kg (5 missing values).
+- Replaced missing Weight_kg values with the mean of the column.
+
+#### 4. Data Type Correction & Standardization:
+- Rounded Screen_Size_cm values to two decimal places for consistency.
+
+#### 5. Further Data Processing:
+- Future tasks in the lab involve standardizing and normalizing data, visualizing attributes using binning, and converting categorical data into numerical indicators.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 3 - Exploratory Data Analysis
@@ -119,7 +134,7 @@ pandas, numpy, matplotlib, and skillsnetwork for dataset retrieval.
 
 - Measuring correlation using Pearson’s method
 
-### Libraries Used:
+### Setup & Libraries Used:
 
 pandas, numpy, seaborn, matplotlib, scipy
 

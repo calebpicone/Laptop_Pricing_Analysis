@@ -69,23 +69,58 @@ The price of the laptop is in USD.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 1 - Importing Data Sets
 
-### Key Highlights:
+### Key Skills Covered:
+- Importing datasets into Pandas DataFrame
+- Data cleaning (replacing missing or incorrect values)
+- Adding headers to datasets
+- Exploring basic data insights through summary statistics
+- Understanding data types and their impact on analysis
 
-#### Data Handling:
-Loaded a dataset containing 238 laptop entries with 12 columns covering manufacturer, specifications, and pricing.
+### Libraries Used:
+- pandas
+- numpy
 
-#### Exploratory Data Analysis (EDA): 
-Used df.info() to inspect column data types, non-null counts, and memory usage.
+### Key Tasks & Insights:
 
-#### Identifying Data Issues: 
-Detected missing values in Screen_Size_inch and Weight_kg columns.
+#### 1. Importing the Dataset
+- Loaded a dataset from a CSV file into a Pandas DataFrame (df).
+- Confirmed successful loading by printing the first 5 rows of the dataset.
 
-#### Python & Pandas Techniques:
-Imported datasets using pandas.read_csv().
-Used df.info() for dataset structure analysis.
-Recognized numerical (int64, float64) and categorical (object) data types.
+##### Findings:
+- The dataset consists of laptop pricing data, including columns like Manufacturer, Category, Screen type, GPU, OS, CPU core count, screen size, CPU frequency, RAM size, storage, weight, and price.
 
-This lab serves as a foundation for further data analysis exercises, reinforcing skills in data exploration, cleaning, and preprocessing.
+#### 2. Adding Headers
+- Added appropriate headers to the DataFrame to represent the columns more clearly.
+- The headers include: "Manufacturer", "Category", "Screen", "GPU", "OS", "CPU_core", "Screen_Size_inch", "CPU_frequency", "RAM_GB", "Storage_GB_SSD", "Weight_kg", "Price".
+
+##### Findings:
+- The DataFrame was updated to reflect the new headers, improving its readability and structure.
+
+#### 3. Data Cleaning (Replacing '?' with NaN)
+- Replaced '?' values in the dataset with NaN using NumPy for further cleaning.
+
+##### Findings:
+- Missing or incorrect data represented by '?' was cleaned to avoid analysis errors and prepare the dataset for further analysis.
+
+#### 4. Exploring Data Types
+- Used df.dtypes to explore the data types of each column.
+
+##### Findings:
+- Columns like "Manufacturer", "Screen", "Weight_kg" are of object type, indicating categorical or textual data.
+- Numerical columns such as "Category", "GPU", "CPU_core", "RAM_GB", "Storage_GB_SSD", "Price" are of integer or float type, which is suitable for numerical operations.
+
+#### 5. Descriptive Statistical Analysis
+- Generated a statistical summary of the dataset using df.describe(include='all').
+
+##### Findings:
+- The summary provided insights on the distribution of numerical variables like "Category", "GPU", "CPU_core", and "Price".
+- The dataset contains a variety of manufacturers (with "Dell" being the most frequent), screen types, and price ranges. There are also some missing values in "Screen_Size_inch" and "Weight_kg" columns.
+
+#### 6. Summary Information
+- Used df.info() to display the DataFrame's structure, including the number of non-null entries and memory usage.
+
+##### Findings:
+- The dataset contains 238 rows with mostly complete data, except for a few missing values in the "Screen_Size_inch" and "Weight_kg" columns. This indicates that a small amount of data cleaning may still be necessary before further analysis.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 2 - Data Wrangling

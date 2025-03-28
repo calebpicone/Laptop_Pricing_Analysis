@@ -264,3 +264,42 @@ Regression Plots for continuous variables (CPU_frequency, Screen_Size_inch, Weig
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notebook 5 - Model Evaluation and Refinement
+
+### Key Skills Covered
+- Data Splitting & Cross-Validation: Used train_test_split() and cross_val_score() to divide data and improve model performance.
+- Regression Analysis: Implemented linear and polynomial regression models.
+- Overfitting Identification: Analyzed R² scores across polynomial degrees to determine when the model starts to overfit.
+- Ridge Regression: Applied Ridge Regression to control overfitting by adjusting the alpha hyperparameter.
+- Hyperparameter Tuning with Grid Search: Used GridSearchCV to optimize model performance by finding the best hyperparameter settings.
+
+### Libraries Used
+- pandas – Data manipulation and preprocessing
+- numpy – Numerical operations
+- matplotlib & seaborn – Data visualization
+- sklearn – Machine learning tools (regression models, cross-validation, Ridge regression, hyperparameter tuning)
+
+### Key Tasks & Insights
+#### 1. Data Preparation & Initial Model Training
+- Loaded a dataset of laptop specifications and prices.
+- Dropped unnecessary columns and split the dataset into training (90%) and testing (10%) subsets.
+- Built a simple linear regression model using "CPU_frequency" as a predictor.
+- Found poor performance on test data (negative R² score), suggesting that a single feature is insufficient.
+
+#### 2. Cross-Validation for Model Improvement
+- Used 4-fold cross-validation to evaluate model stability.
+- Results showed a negative mean R² (-0.161) with high variance, indicating that the model lacks generalization.
+
+#### 3. Overfitting Detection with Polynomial Regression
+- Increased model complexity using polynomial features (degrees 1–5).
+- Plotted R² scores to visualize performance changes.
+- R² initially improves but then drops, highlighting overfitting at higher degrees.
+
+#### 4. Ridge Regression for Overfitting Control
+- Used multiple features (CPU frequency, RAM, SSD storage, etc.) in a degree-2 polynomial model.
+- Applied Ridge Regression to introduce regularization and control overfitting.
+- Evaluated R² scores across different alpha values (0.001 to 1).
+- Found an optimal alpha value, demonstrating Ridge Regression’s ability to improve generalization.
+
+#### 5. Hyperparameter Tuning with Grid Search
+- Used GridSearchCV to automate hyperparameter selection.
+- Identified the best model parameters for improved accuracy
